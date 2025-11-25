@@ -1,0 +1,13 @@
+file_format: "1"
+id: cornedeon
+name: Cornedeon
+type: shield
+url: https://github.com/alko-kbd/zmk-cornedeon/
+requires: [pro_micro]
+features:
+  - keys
+  - studio
+siblings:
+  - cornedeon_left
+  - cornedeon_right
+  
