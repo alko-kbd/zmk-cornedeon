@@ -7,13 +7,26 @@
 #
 ---
 include:
+#  - board: nice_nano_v2
+#    shield: cornedeon_left
+#    snippet: studio-rpc-usb-uart
+#    artifact-name: zmk_studio_cornedeon_left
+
   - board: nice_nano_v2
-    shield: cornedeon_left
+    shield: cornedeon_dongle
+    snippet: studio-rpc-usb-uart
+    artifact-name: zmk_studio_cornedeon_dongle
+#    snippet: zmk-usb-logging
+
+  - board: nice_nano_v2
+    shield: cornedeon_left_peripheral
     snippet: studio-rpc-usb-uart
     artifact-name: zmk_studio_cornedeon_left
+
   - board: nice_nano_v2
     shield: cornedeon_right
     snippet: studio-rpc-usb-uart
     artifact-name: zmk_studio_cornedeon_right
+
 #  - board: nice_nano_v2
 #    shield: settings_reset

@@ -3,3 +3,9 @@ config SHIELD_CORNEDEON_LEFT
 
 config SHIELD_CORNEDEON_RIGHT
     def_bool $(shields_list_contains,cornedeon_right)
+
+config SHIELD_CORNEDEON_LEFT_PERIPHERAL
+    def_bool $(shields_list_contains,cornedeon_left_peripheral)
+
+config SHIELD_CORNEDEON_DONGLE
+    def_bool $(shields_list_contains,cornedeon_dongle)
