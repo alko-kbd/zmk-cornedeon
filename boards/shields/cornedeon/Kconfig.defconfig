@@ -1,5 +1,20 @@
+if SHIELD_CORNEDEON_LEFT
+
 config ZMK_KEYBOARD_NAME
     default "Cornedeon"
 
-config ZMK_SPLIT
+onfig ZMK_SPLIT_ROLE_CENTRAL
     default y
+
+config ZMK_USB
+    default y
+
+endif
+
+
+if SHIELD_CORNEDEON_LEFT || SHIELD_CORNEDEON_RIGHT
+    config ZMK_SPLIT
+        default y
+
+endif
+
