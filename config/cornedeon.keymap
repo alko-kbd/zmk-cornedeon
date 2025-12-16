@@ -52,7 +52,7 @@
                         bindings = <
    &kp KP_ASTERISK  &kp KP_SLASH   &kp KP_N0    &kp KP_N7 &kp KP_N8 &kp KP_N9       &kp F7   &kp F8  &kp F9   &kp F10   &kp PSCRN  &kp PAUSE_BREAK
    &kp KP_PLUS      &kp KP_MINUS   &kp KP_DOT   &kp KP_N4 &kp KP_N5 &kp KP_N6       &kp F4   &kp F5  &kp F6   &kp F11   &kp KP_NUM &kp SLCK
-   &kp LSHFT        &none          &kp KP_EQUAL &kp KP_N1 &kp KP_N2 &kp KP_N3       &kp F1   &kp F1  &kp F3   &kp F12   &kp K_APP  &kp RSHFT
+   &kp LSHFT        &none          &kp KP_EQUAL &kp KP_N1 &kp KP_N2 &kp KP_N3       &kp F1   &kp F2  &kp F3   &kp F12   &kp K_APP  &kp RSHFT
    &kp LCTRL        &kp HOME       &kp END      &kp LALT  &trans    &kp KP_ENTER    &kp RET  &trans  &kp CAPS &kp PG_UP &kp PG_DN  &kp RCTRL
                         >;
                 };
@@ -78,6 +78,22 @@
             layer_3 {
                 if-layers = <1 2>;
                 then-layer = <3>;
+            };
+        };
+        
+        combos {
+            compatible = "zmk,combos";
+            combo_bt_clr_left {
+                timeout-ms = <50>;
+                layers = <1>
+                key-positions = <RC(0,0) RC(0,1) RC(0,2) RC(0,3)>;
+                bindings = <&bt BT_CLR>;
+            };
+            combo_bt_clr_right {
+                timeout-ms = <50>;
+                layers = <2>
+                key-positions = <RC(0,8) RC(0,9) RC(0,10) RC(0,11)>;
+                bindings = <&bt BT_CLR>;
             };
         };
 };
