@@ -2,6 +2,16 @@
 config ZMK_SPLIT
     default y
 
+if SHIELD_CORNEDEON_LEFT
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 1
+endif
+
+if SHIELD_CORNEDEON_DONGLE
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
+endif
+
 
 if SHIELD_CORNEDEON_LEFT || SHIELD_CORNEDEON_DONGLE
 
@@ -17,9 +27,6 @@ endif
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
-
-config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
-    default 1
 
 config BT_MAX_CONN
     default 7
