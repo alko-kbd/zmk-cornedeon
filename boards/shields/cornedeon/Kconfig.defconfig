@@ -15,16 +15,6 @@ endif
 
 if SHIELD_CORNEDEON_LEFT || SHIELD_CORNEDEON_DONGLE
 
-if SHIELD_CORNEDEON_LEFT
-config ZMK_KEYBOARD_NAME
-    default "Cornedeon ZMK"
-endif
-
-if SHIELD_CORNEDEON_DONGLE
-config ZMK_KEYBOARD_NAME
-    default "Cornedeon Dongle"
-endif
-
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 

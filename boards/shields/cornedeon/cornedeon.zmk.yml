@@ -10,4 +10,6 @@ features:
 siblings:
   - cornedeon_left
   - cornedeon_right
+  - cornedeon_dongle
+  
   
