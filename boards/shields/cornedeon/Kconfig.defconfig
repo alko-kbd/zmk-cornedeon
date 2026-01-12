@@ -18,4 +18,4 @@ config BT_MAX_PAIRED
 config ZMK_USB
     default y
 
-endif // SHIELD_CORNEDEON_DONGLE
+endif  # SHIELD_CORNEDEON_DONGLE
