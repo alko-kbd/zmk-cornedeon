@@ -92,7 +92,7 @@
         combo_bt_clr_right {
             timeout-ms = <50>;
             layers = <2>;
-            key-positions = <8 9 10 11>;
+            key-positions = <12 13 14 15>;
             bindings = <&bt BT_CLR>;
         };
     };
