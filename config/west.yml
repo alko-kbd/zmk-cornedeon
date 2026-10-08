@@ -12,5 +12,6 @@ manifest:
       import: app/west.yml
     - name: prospector-zmk-module
       remote: alko
+      revision: main
   self:
     path: config
