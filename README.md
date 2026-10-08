@@ -20,4 +20,4 @@ Prepare build environvent (devcontainer) as described in ZMK docs.
 
 ~zmk-workspace$ devcontainer exec --workspace-folder ./zmk /bin/bash
 
-#workspaces/zmk# ./zmk-cornedeon/build.sh <dongle|left|right|left_central>
+#workspaces/zmk# ./zmk-cornedeon/build.sh <dongle|prospector|left|right|left_central|right_central>
