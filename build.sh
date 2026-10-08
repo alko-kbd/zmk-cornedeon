@@ -20,13 +20,20 @@ if [ -z "$1" ]; then
 fi
 
 SHIELD="${KEYBOARD}_$1"
+BUILD_SHIELD=$SHIELD
 
-echo "=== Build: ${SHIELD} ==="
+if [ "$1" = "prospector" ]; then
+#    BOARD="xiao_ble//zmk"
+    BUILD_SHIELD="${SHIELD};prospector_adapter"
+    MODULES_DIR="${MODULES_DIR};${WORKSPACE_DIR}/ext/prospector-zmk-module"
+fi
+
+echo "=== Build: ${BOARD} / ${SHIELD} ==="
 
 #  -S zmk-usb-logging \
 west build -s app -p -b ${BOARD} -S studio-rpc-usb-uart \
   -- \
-  -DSHIELD="$SHIELD" \
+  -DSHIELD="$BUILD_SHIELD" \
   -DZMK_CONFIG="$CONFIG_DIR" \
   -DZMK_EXTRA_MODULES="$MODULES_DIR" \
   -DCONFIG_ZMK_STUDIO=y

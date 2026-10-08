@@ -6,7 +6,7 @@ Keyboard Maintainer: [alko](https://github.com/alko-kbd/) [alko-kbd@alk0.ru](mai
 
 Web Site: [cornedeon.ru](https://cornedeon.ru)
 
-![Cornedeon](pics/cornedeon_s.jpg)
+![Cornedeon](pics/1_over_prospector.jpg)
 
 ## Local build
 

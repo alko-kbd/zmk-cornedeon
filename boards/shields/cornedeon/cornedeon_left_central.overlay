@@ -1,1 +1,1 @@
-#include "cornedeon.dtsi"
+#include "cornedeon_left.overlay"
