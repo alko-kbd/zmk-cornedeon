@@ -24,6 +24,11 @@ include:
     artifact-name: zmk_cornedeon_left_central
 
   - board: nice_nano_v2
+    shield: cornedeon_right_central
+    snippet: studio-rpc-usb-uart
+    artifact-name: zmk_cornedeon_rihgt_central
+
+  - board: nice_nano_v2
     shield: cornedeon_left
     artifact-name: zmk_cornedeon_left
 #    snippet: studio-rpc-usb-uart
