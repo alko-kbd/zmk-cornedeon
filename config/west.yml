@@ -6,7 +6,7 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: alko
       url-base: https://github.com/alko_kbd   
-    projects:
+  projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
