@@ -13,7 +13,7 @@ include:
     artifact-name: zmk_cornedeon_dongle
   #    snippet: zmk-usb-logging
 
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: cornedeon_prospector prospector_adapter
     snippet: studio-rpc-usb-uart
     artifact-name: zmk_cornedeon_prospector
