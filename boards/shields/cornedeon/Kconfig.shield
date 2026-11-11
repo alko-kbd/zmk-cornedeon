@@ -1,6 +1,9 @@
 config SHIELD_CORNEDEON_DONGLE
     def_bool $(shields_list_contains,cornedeon_dongle)
 
+config SHIELD_CORNEDEON_DONGLE_INK
+    def_bool $(shields_list_contains,cornedeon_dongle_ink)
+
 config SHIELD_CORNEDEON_PROSPECTOR
     def_bool $(shields_list_contains,cornedeon_prospector)
 

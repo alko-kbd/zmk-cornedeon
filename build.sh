@@ -28,6 +28,7 @@ if [ "$1" = "prospector" ]; then
     MODULES_DIR="${MODULES_DIR};${WORKSPACE_DIR}/ext/prospector-zmk-module"
 fi
 
+
 echo "=== Build: ${BOARD} / ${SHIELD} ==="
 
 #  -S zmk-usb-logging \

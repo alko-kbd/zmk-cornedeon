@@ -1,0 +1,6 @@
+if(SHIELD MATCHES "cornedeon_dongle_ink")
+  zephyr_library_include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+  target_sources(app PRIVATE ink_status_screen.c)
+  target_sources(app PRIVATE widgets/hid_indicators_status.c)
+  target_sources(app PRIVATE widgets/peripheral_status.c)
+endif()

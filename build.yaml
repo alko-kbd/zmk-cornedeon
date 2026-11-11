@@ -14,6 +14,12 @@ include:
   #    snippet: zmk-usb-logging
 
   - board: nice_nano//zmk
+    shield: cornedeon_dongle_ink
+    snippet: studio-rpc-usb-uart
+    artifact-name: zmk_cornedeon_dongle_ink
+  #    snippet: zmk-usb-logging
+
+  - board: nice_nano//zmk
     shield: cornedeon_prospector prospector_adapter
     snippet: studio-rpc-usb-uart
     artifact-name: zmk_cornedeon_prospector
@@ -26,7 +32,7 @@ include:
   - board: nice_nano//zmk
     shield: cornedeon_right_central
     snippet: studio-rpc-usb-uart
-    artifact-name: zmk_cornedeon_rihgt_central
+    artifact-name: zmk_cornedeon_right_central
 
   - board: nice_nano//zmk
     shield: cornedeon_left
